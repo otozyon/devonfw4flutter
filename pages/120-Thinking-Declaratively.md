@@ -10,7 +10,7 @@ If you are coming from the native mobile world and *imperative* frameworks like 
 
 ## Declarative Programming vs Imperative Programming
 
-I will explain the difference between *declarative* and *imperative* using a metaphor: For a second, let’s think of programming as *talking* to the underlying framework. In this context, an imperative approach is telling the framework **exactly** what you want it to do. “Imperium” (Latin) means “to command”. A declarative approach, on the other hand, would be describing to the framework what kind of result you want to get and then letting the framework decide on how to achieve that result. “Declaro” (Latin) means “to explain” \[1\], \[12\], \[27\], \[28\]. Let’s look at a code example:
+I will explain the difference between *declarative* and *imperative* using a metaphor: For a second, let’s think of programming as *talking* to the underlying framework. In this context, an imperative approach is telling the framework **exactly** what you want it to do. “Imperare” (Latin) means “to command”. A declarative approach, on the other hand, would be describing to the framework what kind of result you want to get and then letting the framework decide on how to achieve that result. “Declarare” (Latin) means “to announce/to declare/to pronounce” \[1\], \[12\], \[27\], \[28\]. Let’s look at a code example:
 
 ``` dart
 List numbers = [1,2,3,4,5];
@@ -53,7 +53,7 @@ In Flutter, you never imperatively or explicitly call a UI element to change it.
 
 Typical State examples are user data, a user’s scroll position within a list, a favorite list.
 
-Let’s have a look at a classic UI problem and how we would solve it imperatively in Android and compare it to Flutter’s declarative approach. let’s say we want to build a button that changes its color to red when it is pressed. In Android we find the button by its ID, attach a listener, and tell that listener to change the background color when the button is pressed:
+Let’s have a look at a classic UI problem and how we would solve it imperatively in Android and compare it to Flutter’s declarative approach. Let’s say we want to build a button that changes its color to red when it is pressed. In Android we find the button by its ID, attach a listener, and tell that listener to change the background color when the button is pressed:
 
 ``` java
 Button button = findViewById(R.id.button_id);
