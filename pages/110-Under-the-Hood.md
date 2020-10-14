@@ -18,7 +18,7 @@ Flutter [\[1\]](https://flutter.dev/) is a framework for cross-platform native d
 
 *Figure 1: Native app rendering [\[14\]](https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514)*
 
-The classic way to build a mobile app would be to write native code for each platform you want to support. I.E. One for IOS [\[15\]](https://developer.apple.com/ios/), one for Android [\[16\]](https://developer.android.com/) and so on. In this approach, your app will be written in a platform-specific language and render through platform-specific Widgets and a platform-specific engine. During the development, you have direct access to platform-specific services and sensors \[14\], \[17\], \[18\]. But you will have to build the same app multiple times, which multiplies your workload by however many platforms you want to support.
+The classic way to build a mobile app would be to write native code for each platform you want to support. I.E. One for IOS [\[15\]](https://developer.apple.com/ios/), one for Android [\[16\]](https://developer.android.com/) and so on. In this approach, your app will be written in a platform-specific language and render through platform-specific Widgets and a platform-specific engine. During the development, you have direct access to platform-specific services and sensors \[14\], \[17\], \[18\]. But you will have to build the same app multiple times, which multiplies your workload by how many platforms you want to support.
 
 ### Embedded WebApp Approach
 
@@ -26,7 +26,7 @@ The classic way to build a mobile app would be to write native code for each pla
 
 *Figure 2: Embedded WebApp rendering [\[14\]](https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514)*
 
-Embedded WebApps where the first approach to cross-platform development. For this approach, you build your application with HTML [\[19\]](https://www.w3.org/html/), CSS [\[20\]](https://www.w3.org/Style/CSS/Overview.de.html), and JavaScript [\[6\]](https://www.ecma-international.org/publications/standards/Ecma-262.htm) and then render it through a native WebView \[14\], \[17\]. The problem here is, that developers are limited to the web technology stack and that communication between the app and native services always has to run through a *bridge* [\[18\]](https://medium.com/flutter-community/in-plain-english-so-what-the-heck-is-flutter-and-why-is-it-a-big-deal-7a6dc926b34a).
+Embedded WebApps were the first approach to cross-platform development. For this approach, you build your application with HTML [\[19\]](https://www.w3.org/html/), CSS [\[20\]](https://www.w3.org/Style/CSS/Overview.de.html), and JavaScript [\[6\]](https://www.ecma-international.org/publications/standards/Ecma-262.htm) and then render it through a native WebView \[14\], \[17\]. The problem here is, that developers are limited to the web technology stack and that communication between the app and native services always has to run through a *bridge* [\[18\]](https://medium.com/flutter-community/in-plain-english-so-what-the-heck-is-flutter-and-why-is-it-a-big-deal-7a6dc926b34a).
 
 #### Bridges
 
@@ -38,7 +38,7 @@ Bridges connect components with one another. These components can be built in th
 
 *Figure 3: Reactive app rendering [\[14\]](https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514)*
 
-Apps build with reactive frameworks (like React Native [\[22\]](https://facebook.github.io/react-native/)) are mostly written in a platform-independent language like JavaScript [\[6\]](https://www.ecma-international.org/publications/standards/Ecma-262.htm). The JavaScript code then sends information on how UI components should be displayed to the native environment. This communication always runs through a *bridge*. So we end up with native Widgets that are controller through JavaScript. The main problem here is that the communication through the *bridge* can be a bottleneck that can lead to performance issues \[14\], \[17\], \[18\], \[23\].
+Apps built with reactive frameworks (like React Native [\[22\]](https://facebook.github.io/react-native/)) are mostly written in a platform-independent language like JavaScript [\[6\]](https://www.ecma-international.org/publications/standards/Ecma-262.htm). The JavaScript code then sends information on how UI components should be displayed to the native environment. This communication always runs through a *bridge*. So we end up with native Widgets that are controlled through JavaScript. The main problem here is that the communication through the *bridge* can be a bottleneck that can lead to performance issues \[14\], \[17\], \[18\], \[23\].
 
 ### Flutter’s Approach
 
@@ -70,7 +70,7 @@ One additional advantage of Flutter is that it comes with two different compiler
 
 ## Hot Reload
 
-*Hot Reload* [\[25\]](https://flutter.dev/docs/development/tools/hot-reload) is a feature that Web developers are already very familiar with. It essentially means that changes in the code are displayed in the running application near instantaneously. Thanks to its JIT Compiler, The Flutter Framework is also able to provide this feature.
+*Hot Reload* [\[25\]](https://flutter.dev/docs/development/tools/hot-reload) is a feature that Web developers are already very familiar with. It essentially means that changes in the code are displayed in the running application near instantaneously. Thanks to its JIT Compiler, the Flutter framework is also able to provide this feature.
 
 ![Hot Reload](https://github.com/devonfw-forge/devonfw4flutter/wiki//images/hot-reload.gif)
 
